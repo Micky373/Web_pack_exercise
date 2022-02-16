@@ -6,6 +6,9 @@ module.exports = {
         index: './src/index.js',
         printing: './src/printing.js',
     },
+    devServer: {
+        static: './dist',
+    },
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
@@ -24,4 +27,5 @@ module.exports = {
             },
         ],
     },
+    mode: 'none',
 };
